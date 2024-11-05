@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script src="array-q.js"></script>
+    
+let obj={
+    name:"arslan",
+    class:"10th",
+    marsk:55.55,
+    details:function myfun(params) {
+        console.log("parent");
+
+
+        let child=()=>{
+            console.log(this);
+            
+        }
+
+        child()
+        
+    }
+
+}
+
+console.log(obj.details());
+
+</body>
+</html>
